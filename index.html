@@ -57,12 +57,11 @@
             <p class="hero-sub reveal reveal-delay-2 text-muted mb-4 mb-lg-5">
               Coverage that moves at your speed — transparent pricing, digital-first claims, and human support when you need it most.
             </p>
-            <div class="hero-actions reveal reveal-delay-3 d-flex flex-wrap gap-3">
-              <a href="#cta-banner" class="btn btn-primary btn-lg btn-glow rounded-pill px-4" data-testid="hero-cta-primary">Start coverage</a>
-              <a href="#services" class="btn btn-ghost btn-lg rounded-pill px-4" data-testid="hero-cta-secondary">Explore plans</a>
+            <div class="hero-actions reveal reveal-delay-3">
+              <button type="button" class="btn btn-primary btn-lg btn-glow rounded-pill px-4" data-scroll-target="#cta-banner" data-testid="hero-cta-primary">Start coverage</button>
+              <button type="button" class="btn btn-ghost btn-lg rounded-pill px-4" data-scroll-target="#services" data-testid="hero-cta-secondary">Explore plans</button>
             </div>
             <div class="hero-trust reveal reveal-delay-4 d-flex align-items-center gap-3 mt-4 pt-lg-2">
-              <div class="trust-avatars flex-shrink-0" aria-hidden="true"></div>
               <p class="small text-muted mb-0"><strong class="text-body">12k+</strong> members trust Tameen Now worldwide</p>
             </div>
           </div>
@@ -292,17 +291,17 @@
     </section>
 
     <section id="contact" class="section quote-section section-animate" aria-labelledby="quote-heading">
-      <div class="container">
+      <div class="container ">
         <header class="section-head text-center mx-auto mb-4 mb-lg-5">
           <p class="eyebrow reveal">Get started</p>
           <h2 id="quote-heading" class="section-title reveal fw-bold">Request a quote</h2>
           <p class="section-desc reveal text-muted mb-0">Choose your coverage type and we’ll reach out with a tailored plan.</p>
         </header>
         <div class="row align-items-center justify-content-center g-4 g-xl-5 reveal">
-          <div class="col-lg-6 order-2 order-lg-1">
+          <div class="col-lg-6 col-md-4 order-2 order-lg-1">
             <img src="./New folder/20944573.jpg" alt="insurance policy" class="img-fluid w-100 rounded-3 d-block">
           </div>
-          <div class="col-lg-6 order-1 order-lg-2">
+          <div class="col-lg-6 col-md-8 order-1 order-lg-2">
             <form class="quote-form glass-card p-4 p-md-5 rounded-4 vstack gap-4" id="quote-form" data-testid="quote-form" novalidate>
               <fieldset class="m-0 p-0 border-0">
                 <legend class="form-label fw-semibold mb-3 px-0">Insurance type</legend>

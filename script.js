@@ -41,6 +41,22 @@
   window.addEventListener("scroll", onScrollHeader, { passive: true });
   onScrollHeader();
 
+  /* Hero CTA buttons — scroll to section */
+  function scrollToSelector(sel) {
+    if (!sel) return;
+    var el = document.querySelector(sel);
+    if (!el) return;
+    el.scrollIntoView({
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+      block: "start"
+    });
+  }
+  document.querySelectorAll(".hero-actions button[data-scroll-target]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      scrollToSelector(btn.getAttribute("data-scroll-target"));
+    });
+  });
+
   /* Navbar collapse — refresh icons after Bootstrap toggles */
   const navCollapse = document.getElementById("navCollapse");
   if (navCollapse && typeof bootstrap !== "undefined") {

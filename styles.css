@@ -33,6 +33,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -54,6 +56,19 @@ body.theme-tameen {
   background: linear-gradient(165deg, var(--white) 0%, var(--accent-bg) 45%, #f6f9ff 100%);
   min-height: 100vh;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  position: relative;
+}
+
+.theme-tameen main {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Let Bootstrap rows shrink on narrow screens (prevents horizontal overflow) */
+.theme-tameen main .row > [class*="col"] {
+  min-width: 0;
 }
 
 img {
@@ -382,6 +397,10 @@ img {
   }
 }
 
+.hero-visual {
+  min-width: 0;
+}
+
 .hero-trust {
   margin-top: 2rem;
   display: flex;
@@ -396,7 +415,9 @@ img {
 }
 
 .hero-card {
+  max-width: 100%;
   padding: 1.35rem;
+  overflow-x: hidden;
 }
 
 /* Hero mock: one-shot motion when revealed (no infinite loops) */
@@ -718,6 +739,11 @@ img {
 }
 
 /* Testimonials — carousel chrome in normal flow (no absolutely positioned controls) */
+.testimonials-carousel {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .testimonials-carousel .carousel-inner {
   border-radius: var(--radius);
 }
@@ -932,6 +958,19 @@ img {
   background: linear-gradient(135deg, var(--primary), var(--primary-dark));
   border-color: transparent;
   color: var(--white);
+}
+
+.quote-insurance-types .quote-insurance-types-btn {
+  text-align: center;
+  line-height: 1.25;
+}
+
+@media (max-width: 575.98px) {
+  .quote-insurance-types .quote-insurance-types-btn {
+    font-size: 0.74rem;
+    padding-inline: 0.28rem;
+    letter-spacing: -0.02em;
+  }
 }
 
 .quote-side-visual img {

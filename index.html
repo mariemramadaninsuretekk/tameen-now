@@ -305,18 +305,18 @@
             <form class="quote-form glass-card p-4 p-md-5 rounded-4 vstack gap-4" id="quote-form" data-testid="quote-form" novalidate>
               <fieldset class="m-0 p-0 border-0">
                 <legend class="form-label fw-semibold mb-3 px-0">Insurance type</legend>
-                <div class="row g-2" role="group" aria-label="Insurance type">
-                  <div class="col-sm-4">
+                <div class="row g-2 gx-1 gx-sm-2 quote-insurance-types" role="group" aria-label="Insurance type">
+                  <div class="col-4">
                     <input type="radio" class="btn-check" name="insurance_type" id="quote-type-general" value="general" checked autocomplete="off" data-testid="quote-type-general" />
-                    <label class="btn btn-outline-primary w-100 rounded-pill py-2" for="quote-type-general">General</label>
+                    <label class="btn btn-outline-primary w-100 rounded-pill py-2 quote-insurance-types-btn" for="quote-type-general" data-testid="quote-type-general-label">General</label>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-4">
                     <input type="radio" class="btn-check" name="insurance_type" id="quote-type-medical" value="medical" autocomplete="off" data-testid="quote-type-medical" />
-                    <label class="btn btn-outline-primary w-100 rounded-pill py-2" for="quote-type-medical">Medical</label>
+                    <label class="btn btn-outline-primary w-100 rounded-pill py-2 quote-insurance-types-btn" for="quote-type-medical" data-testid="quote-type-medical-label">Medical</label>
                   </div>
-                  <div class="col-sm-4">
+                  <div class="col-4">
                     <input type="radio" class="btn-check" name="insurance_type" id="quote-type-motor" value="motor" autocomplete="off" data-testid="quote-type-motor" />
-                    <label class="btn btn-outline-primary w-100 rounded-pill py-2" for="quote-type-motor">Motor</label>
+                    <label class="btn btn-outline-primary w-100 rounded-pill py-2 quote-insurance-types-btn" for="quote-type-motor" data-testid="quote-type-motor-label">Motor</label>
                   </div>
                 </div>
               </fieldset>
